@@ -15,21 +15,22 @@
   - Crea degli elementi (100x100px) con sfondo blu
   - Ogni box ha i bordi arrotondati al 100% per ottenere una forma circolare
 */
-/* .contenitore {
+.contenitore {
   display: flex;
-  justify-content: flex-start;
-  align-items: flex-start;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
   height: 200px;
   width: 100%;
   background-color: lightgray;
-  margin: 20px 0;
+  margin: 50px 0;
 }
 .contenitore .box {
   width: 100px;
   height: 100px;
   background-color: blue;
   border-radius: 100%;
-} */
+}
 
 
 
@@ -45,11 +46,11 @@
   - Crea degli elementi (100x100px) con sfondo blu
   - Ogni box ha i bordi arrotondati al 100% per ottenere una forma circolare
 */
-/* .contenitore-verticale {
+.contenitore-verticale {
   display: flex;
   flex-direction: column;
-  justify-content: flex-start;
-  align-items: flex-start;
+  justify-content: center;
+  align-items: center;
   height: 800px;
   width: 250px;
   background-color: lightgray;
@@ -60,7 +61,7 @@
   height: 100px;
   background-color: blue;
   border-radius: 100%;
-} */
+}
 
 
 
@@ -84,7 +85,7 @@
   - Occupa tutto lo spazio orizzontale disponibile grazie a flex-grow: 1
   - Sfondo verde
 */
-/* .contenitore-elementi {
+.contenitore-elementi {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -98,10 +99,10 @@
   margin: 0 10px;
 }
 .contenitore-elementi .elemento-1 {
-  width: 100px;
+  width: 200px;
   background-color: red;
 }
 .contenitore-elementi .elemento-2 {
   flex-grow: 1;
   background-color: green;
-} */
+}
