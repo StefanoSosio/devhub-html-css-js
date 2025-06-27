@@ -15,7 +15,7 @@ Questo progetto è un esempio di utilizzo di HTML, CSS e JavaScript per la creaz
 
 ## Come usare il progetto
 
-1. Clona o scarica la repository.
+1. Clona o scarica il repository.
 2. Apri `index.html` in un browser per visualizzare gli esempi di layout e stile.
 3. Modifica i file CSS e JS per sperimentare con nuovi stili o funzionalità.
 
