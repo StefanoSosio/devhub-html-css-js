@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+  <!-- Metadati della pagina -->
+  <meta charset="UTF-8"> <!-- Codifica caratteri -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- Responsive design -->
+
+  <title>Titolo della Pagina</title> <!-- Titolo che appare nella scheda del browser -->
+
+  <!-- Collegamenti a file CSS esterni -->
+  <link rel="stylesheet" href="css/style.css">
+  
+  <!-- Favicon -->
+  <!-- <link rel="icon" href="favicon.ico"> -->
+
+  <!-- Eventuali script nel <head> (caricati prima del rendering) -->
+  <!-- defer: indica al browser di scaricare lo script in parallelo, ma di eseguirlo solo dopo che tutto l'HTML è stato completamente letto e parserizzato -->
+  <!-- <script src="script.js" defer></script> -->
+</head>
+<body>
+  <!-- Contenuto principale della pagina -->
+
+  <!-- Intestazione (header) -->
+  <!--
+    Tag semantico che rappresenta l'intestazione di una sezione o dell'intera pagina.
+
+    Può contenere:
+    - Titolo del sito o della sezione
+    - Logo
+    - Barra di navigazione
+    - Informazioni introduttive
+
+    Nota:
+    - Può comparire più volte in una pagina.
+  -->
+  <header>
+    <h1 class="titolo">Benvenuto</h1>
+  </header>
+
+  <!-- Navigazione (menu) -->
+  <!--
+    Tag semantico per la navigazione principale o secondaria.
+
+    Contiene link a:
+    - Altre pagine del sito
+    - Sezioni della pagina corrente
+    - Altri siti
+
+    Importante per:
+    - L'accessibilità (screen reader)
+    - La SEO (motori di ricerca riconoscono il blocco di navigazione)
+  -->
+  <nav>
+    <ul>
+      <li><a href="#">Home</a></li>
+      <li><a href="#">Contatti</a></li>
+    </ul>
+  </nav>
+
+  <!-- Sezione principale -->
+  <!--
+    Tag semantico che racchiude il contenuto principale della pagina.
+
+    Deve:
+    - Comparire solo una volta per pagina
+    - Escludere intestazioni, menu, barre laterali e piè di pagina
+
+    Utile per:
+    - Migliorare l'accessibilità e la comprensione strutturale del contenuto
+  -->
+  <main>
+    <!-- Sezione -->
+    <!--
+      Rappresenta una sezione logica e autonoma di contenuto correlato.
+
+      Da usare quando:
+      - Hai un blocco con un titolo proprio
+      - Il contenuto è una sotto-sezione tematica della pagina
+
+      Attenzione:
+      - Da non usare solo per raggruppare elementi visivamente; è semantico, non decorativo.
+    -->
+    <section>
+      <h2>Sezione 1</h2>
+      <p>Contenuto...</p>
+      <button onclick="alertMessage()">Clicca qui</button> <!-- Pulsante che attiva una funzione JavaScript -->
+    </section>
+
+    <section>
+      <h2>Sezione 2</h2>
+      <p>Altro contenuto...</p>
+      <button id="myButton">Cliccami</button>
+    </section>
+  </main>  
+
+  <!-- Barra laterale opzionale -->
+  <!--
+    Tag semantico usato per contenuti complementari rispetto al contenuto principale.
+
+    Tipici esempi di uso:
+    - Box con informazioni correlate
+    - Citazioni o curiosità
+    - Link a post/articoli simili
+    - Pubblicità
+
+    Può comparire:
+    - All'interno di `<main>`, come parte del contenuto
+    - All'esterno, come barra laterale generale del sito
+  -->
+  <aside>
+    <h3>Sidebar</h3>
+    <p>Informazioni aggiuntive</p>
+  </aside>
+
+  <!-- Piè di pagina -->
+  <!--
+    Tag semantico per il piè di pagina.
+
+    Può contenere:
+    - Informazioni legali
+    - Autori, copyright
+    - Link a privacy, termini
+    - Riassunti o note di chiusura
+
+    Nota:
+    - Può comparire più volte: ogni sezione può avere il suo `<footer>`.
+  -->
+  <footer>
+    <p>&copy; 2025 Il tuo nome o azienda</p>
+  </footer>
+
+  <!-- Script importato da file esterno -->
+  <script src="js/funzioni.js"></script>
+
+  <!-- Script inline -->
+  <script>
+    // Questo script viene eseguito non appena il browser raggiunge questo punto del DOM
+
+    // Aspettiamo che la pagina sia completamente caricata
+    document.addEventListener('DOMContentLoaded', function () {
+      console.log('Pagina caricata con successo.')
+
+      const button = document.getElementById('myButton')
+      if (button) {
+        button.addEventListener('click', function () {
+          alert('Hai cliccato il bottone!')
+        })
+      }
+    })
+  </script>
+</body>
+</html>
