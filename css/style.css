@@ -1,3 +1,107 @@
 .titolo {
   color: red;
 }
+
+
+/* 
+  Stili per un contenitore gestito con flexbox (orientamento
+
+  .contenitore:
+  - Imposta un layout flex con gli elementi allineati grazie alle proprietà justify-content e align-items
+  - Altezza fissa di 200px e larghezza al 100% del contenitore padre
+  - Sfondo grigio chiaro e margine verticale di 20px
+
+  .contenitore .box:
+  - Crea degli elementi (100x100px) con sfondo blu
+  - Ogni box ha i bordi arrotondati al 100% per ottenere una forma circolare
+*/
+/* .contenitore {
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  height: 200px;
+  width: 100%;
+  background-color: lightgray;
+  margin: 20px 0;
+}
+.contenitore .box {
+  width: 100px;
+  height: 100px;
+  background-color: blue;
+  border-radius: 100%;
+} */
+
+
+
+/* 
+  Stili per un contenitore gestito con flexbox (orientamento verticale)
+
+  .contenitore:
+  - Imposta un layout flex con gli elementi allineati grazie alle proprietà justify-content e align-items
+  - Altezza fissa di 800px e larghezza fissa di 250px
+  - Sfondo grigio chiaro e margine verticale di 20px
+
+  .contenitore-verticale .box:
+  - Crea degli elementi (100x100px) con sfondo blu
+  - Ogni box ha i bordi arrotondati al 100% per ottenere una forma circolare
+*/
+/* .contenitore-verticale {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  height: 800px;
+  width: 250px;
+  background-color: lightgray;
+  margin: 20px 0;
+}
+.contenitore-verticale .box {
+  width: 100px;
+  height: 100px;
+  background-color: blue;
+  border-radius: 100%;
+} */
+
+
+
+/* 
+  Stili per un contenitore gestito con flexbox
+
+  .contenitore-elementi:
+  - Layout flex con allineamento centrato su entrambi gli assi
+  - Altezza fissa di 250px, larghezza al 100%
+  - Sfondo grigio chiaro e margine verticale di 20px
+
+  .contenitore-elementi .elemento:
+  - Altezza fissa di 100px
+  - Margine orizzontale di 10px per distanziare gli elementi
+
+  .elemento-1:
+  - Larghezza fissa di 100px
+  - Sfondo rosso
+
+  .elemento-2:
+  - Occupa tutto lo spazio orizzontale disponibile grazie a flex-grow: 1
+  - Sfondo verde
+*/
+/* .contenitore-elementi {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 250px;
+  width: 100%;
+  background-color: lightgray;
+  margin: 20px 0;
+}
+.contenitore-elementi .elemento {
+  height: 100px;
+  margin: 0 10px;
+}
+.contenitore-elementi .elemento-1 {
+  width: 100px;
+  background-color: red;
+}
+.contenitore-elementi .elemento-2 {
+  flex-grow: 1;
+  background-color: green;
+} */
